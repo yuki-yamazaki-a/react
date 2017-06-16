@@ -1,4 +1,6 @@
 import React from 'react'
+import BarInput from '../partial/BarInput'
+
 let Store, ActionCreator
 
 export default class Inputs extends React.Component {
@@ -26,10 +28,9 @@ export default class Inputs extends React.Component {
                     >Foo: click me.</button>
                 </div>
                 <div>
-                    <input
-                        type='text'
-                        placeholder='Bar: Enter something.'
-                        onChange={e => this.handleChangeBar(e)}
+                    <BarInput
+                        placeholder={'Bar: Enter something.'}
+                        handleChangeBar={ActionCreator.changeBar}
                     />
                 </div>
             </div>
@@ -37,9 +38,6 @@ export default class Inputs extends React.Component {
     }
     handleClickFoo(){
         ActionCreator.toggleFoo(this.state.foo)
-    }
-    handleChangeBar(e){
-        ActionCreator.changeBar(e.target.value)
     }
 }
 

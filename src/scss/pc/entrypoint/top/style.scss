@@ -1,0 +1,24 @@
+// import defaults
+@import "../../settings/**";
+@import "../../tools/extends/**";
+@import "../../tools/mixin/**";
+@import "../../base/**";
+
+// import components
+@import "../../components/Top/AnotherSummary";
+@import "../../components/Top/Inputs";
+@import "../../components/Top/Summary";
+
+@import "../../components/SearchBox/HeaderSearchBox";
+@import "../../components/SearchBox/SearchBox";
+@import "../../components/SearchBox/SearchPanels";
+
+// page style
+
+.top-search-box {
+  border: $-border-normal;
+  width: 200px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #aaaaaa;
+}

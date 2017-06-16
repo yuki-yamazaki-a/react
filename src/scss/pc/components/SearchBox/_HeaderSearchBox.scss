@@ -1,0 +1,42 @@
+%choose-the-condition{
+  @extend %ellipsis;
+  display: block;
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: $-border-normal;
+  border-radius: 2px;
+  padding: 0 20px 0 26px;
+  margin: 0 0 6px;
+  background-color: #ffffff;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header-search-box {
+  position: fixed;
+  z-index: $-layer-herder;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  padding: 0 40px;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  &__title {
+    color: $-color-red;
+  }
+
+  &__item {
+    display: inline-block;
+    float: left;
+  }
+
+  &__choose-the-condition {
+    &--area,
+    &--people {
+      @extend %choose-the-condition;
+    }
+  }
+}
