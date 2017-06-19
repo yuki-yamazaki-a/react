@@ -40,7 +40,7 @@ export default class TopStore extends EventEmitter {
 
   updateBar(newState) {
     Object.assign(_state, newState)
-    console.log('top')
+
     this.emit('change')
   }
 
