@@ -1,0 +1,26 @@
+%choose-the-condition{
+  @extend %ellipsis;
+  display: block;
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: $-border-normal;
+  border-radius: 2px;
+  padding: 0 20px 0 26px;
+  margin: 0 0 6px;
+  background-color: #ffffff;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.search-box {
+  background-color: #ffffff;
+
+  &__choose-the-condition {
+    &--area,
+    &--people {
+      @extend %choose-the-condition;
+    }
+  }
+}
